@@ -3,6 +3,7 @@
 Record Chess games as videos and upload them to Youtube.
 
 This tool is made possible thanks to the following open source tools:
+
 * chessboard.js: https://github.com/oakmac/chessboardjs
 * chess.js: https://github.com/jhlywa/chess.js
 * pgnviewer: https://github.com/siansell/pgnviewer
