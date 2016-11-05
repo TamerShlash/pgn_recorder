@@ -1,0 +1,42 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', Georgia, Times, serif;
+}
+
+p, div {
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-size: 100px;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 50px;
+  border: 0;
+}
+
+.game-details {
+  width: 1630px;
+  float: left;
+}
+
+.game-board {
+  float: right;
+}
+
+.highlight {
+  background-color: #F3F315;
+}
+
+.notation-322f9 {
+  font-size: 38px;
+}
+
+.numeric-fc462 {
+  top: 5px;
+  left: 5px;
+}
+
+.alpha-d2270 {
+  bottom: 3px;
+  right: 8px;
+}
