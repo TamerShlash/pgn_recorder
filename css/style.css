@@ -3,28 +3,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, div {
-  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Slab', Georgia, Times, serif;
+/*  font-family: 'Roboto', Helvetica, Arial, sans-serif; */
   font-size: 100px;
+  letter-spacing: 3px;
+  font-weight: bold;
 }
 
 body {
   background-color: white;
   margin: 0;
-  padding: 50px;
+  padding: 100px 200px;
   border: 0;
 }
 
-.game-details {
-  width: 1630px;
+.game-board {
   float: left;
 }
 
-.game-board {
-  float: right;
+.player-name {
+  margin: 0;
+  padding: 15px 0;
+  line-height: 100px;
+  border: 0;
+  text-align: center;
 }
 
-.highlight {
-  background-color: #F3F315;
+
+.game-details {
+  width: 1380px;
+  float: left;
+  margin-right: 150px;
+  padding-top: 480px;
+}
+
+.game-details .game-detail {
+  font-size: 80px;
+  line-height: 100px;
+  margin: 50px 0 50px 130px;
+  position: relative;
+}
+
+.game-detail .fa {
+  left: -130px;
+  top: 15px;
+  position: absolute;
 }
 
 .notation-322f9 {
@@ -39,4 +62,26 @@ body {
 .alpha-d2270 {
   bottom: 3px;
   right: 8px;
+}
+
+.alizarin {
+  color: #e74c3c;
+}
+
+.nephritis {
+  color: #27ae60;
+}
+
+.belize-hole {
+  color: #2980b9;
+}
+
+.referral {
+  font-size: 75px;
+  bottom: 230px;
+  position: absolute;
+}
+
+.referral a {
+  text-decoration: none;
 }

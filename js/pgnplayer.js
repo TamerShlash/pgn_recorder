@@ -1,7 +1,7 @@
 //dummy data
 pgnData = [
   [
-    '[Event "Euro Club Cup"]',
+    '[Event "GCT Rapid YourNextMove YourNextMove YourNextMove "]',
     '[Site "Kallithea GRE"]',
     '[Date "2008.10.18"]',
     '[EventDate "2008.10.17"]',
@@ -23,11 +23,28 @@ function loadGame(i) {
   game.load_pgn(pgnData[i].join('\n'), {newline_char:'\n'});
   gameHistory = game.history({verbose: true});
   var h = game.header();
-  $('#game-title').text(h.White + ' - ' + h.Black + ', ' + h.Event + ' ' + h.Site + ' ' + h.Date);
+  $('#black-player').html(h.Black)
+  $('#white-player').html(h.White)
+  $('#event-name').html("Event: " + h.Event)
+  $('#site-name').html("Site: " + h.Site)
+  $('#game-date').html("Date: " + h.Date)
+  $('#round-number').html("Round: " + h.Round)
+  $('#eco-code').html("ECO Code: " + h.ECO)
   game.reset();
   board.position(game.fen());
   currentMove = -1;
 }
+
+// [Event "Troll Masters"]
+// [Site "Gausdal NOR"]
+// [Date "2001.01.05"]
+// [Round "1"]
+// [White "Edvardsen,R"]
+// [Black "Carlsen,Magnus"]
+// [Result "1/2-1/2"]
+// [WhiteElo "2055"]
+// [BlackElo ""]
+// [ECO "D12"]
 
 // start doing stuff
 var board, //the chessboard
@@ -43,7 +60,6 @@ var cfg = {
   onChange: function() {}
 };
 board = new ChessBoard('board', cfg);
-$(window).resize(board.resize);
 
 loadGame(0);
 setTimeout(function() {
@@ -56,8 +72,3 @@ setTimeout(function() {
     } 
   }, 2000);
 }, 1000);
-$(document).ready(function() {
-  $(window).resize(board.resize);
-  $('#board-width').html($('body').width());
-  $('#board-height').html($('body').height());
-});

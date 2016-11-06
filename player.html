@@ -4,20 +4,39 @@
     <meta charset="utf-8">
     <title>Mortalchess.com Game Videos</title>
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,700italic|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-<!--     <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0.min.css">
     <link rel="stylesheet" href="./css/chessboard-0.3.0.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/jquery.min.js"></script>
   </head>
   <body>
     <div class="game-details">
-      <h1 id="game-title">TITLE HERE</h1>
-      <div>Board dimensions:
-        <span id="board-width"></span>x<span id="board-height"></span>
+      <div class="game-detail">
+        <li class="fa fa-fw fa-flag-checkered"></li>
+        <span id="event-name"></span>
       </div>
+      <div class="game-detail">
+        <li class="fa fa-fw fa-map-marker alizarin"></li>
+        <span id="site-name"></span>
+      </div>
+      <div class="game-detail">
+        <li class="fa fa-fw fa-calendar nephritis"></li>
+        <span id="game-date"></span>
+      </div>
+      <div class="game-detail">
+        <li class="fa fa-fw fa-hashtag"></li>
+        <span id="round-number"></span>
+      </div>
+      <div class="game-detail">
+        <li class="fa fa-fw fa-play-circle belize-hole"></li>
+        <span id="eco-code"></span>
+      </div>
+      <div class="referral">Animated by <a href="http://mortalchess.com">http://mortalchess.com</a></div>
     </div>
     <div class="game-board">
-      <div id="board" style="width: 2060px"></div>
+      <div id="black-player" class="player-name">Black Player</div>
+      <div id="board" style="width: 1700px"></div>
+      <dir id="white-player" class="player-name">White Player</dir>
     </div>
     <script src="./js/chessboard-0.3.0.min.js"></script>
     <script src="./js/chessjs-0.10.2.min.js"></script>
