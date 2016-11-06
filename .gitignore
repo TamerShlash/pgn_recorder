@@ -3,3 +3,4 @@
 *.png
 data
 *.draft
+.DS_Store
