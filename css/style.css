@@ -5,15 +5,15 @@ h1, h2, h3, h4, h5, h6 {
 p, div {
   font-family: 'Roboto Slab', Georgia, Times, serif;
 /*  font-family: 'Roboto', Helvetica, Arial, sans-serif; */
-  font-size: 100px;
-  letter-spacing: 3px;
+  font-size: 33px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
 body {
   background-color: white;
   margin: 0;
-  padding: 100px 200px;
+  padding: 33px 66px;
   border: 0;
 }
 
@@ -23,47 +23,47 @@ body {
 
 .player-name {
   margin: 0;
-  padding: 15px 0;
-  line-height: 100px;
+  padding: 5px 0;
+  line-height: 33px;
   border: 0;
   text-align: center;
 }
 
 
 .game-details {
-  width: 1380px;
+  width: 460px;
   float: left;
-  margin-right: 150px;
-  padding-top: 480px;
+  margin-right: 50px;
+  padding-top: 160px;
 }
 
 .game-details .game-detail {
-  font-size: 80px;
-  line-height: 100px;
-  margin: 50px 0 50px 130px;
+  font-size: 26px;
+  line-height: 33px;
+  margin: 16px 0 16px 43px;
   position: relative;
 }
 
 .game-detail .fa {
-  left: -130px;
-  top: 15px;
+  left: -43px;
+  top: 5px;
   position: absolute;
 }
 
 .notation-322f9 {
-  font-size: 38px;
+  font-size: 13px;
 }
 
-.numeric-fc462 {
-  top: 5px;
-  left: 5px;
+/*.numeric-fc462 {
+  top: 2px;
+  left: 2px;
 }
 
 .alpha-d2270 {
-  bottom: 3px;
-  right: 8px;
+  bottom: 1px;
+  right: 3px;
 }
-
+*/
 .alizarin {
   color: #e74c3c;
 }
@@ -77,8 +77,8 @@ body {
 }
 
 .referral {
-  font-size: 75px;
-  bottom: 230px;
+  font-size: 25px;
+  bottom: 76px;
   position: absolute;
 }
 
